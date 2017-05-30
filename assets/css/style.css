@@ -568,7 +568,7 @@ html,html body{
 				display: block;
 				top: 0px;
 				right: 0px;
-				background: #34495E url(images/nav.svg) no-repeat center center;
+				background: #34495E url(../images/nav.svg) no-repeat center center;
 				height: 50px;
 				width: 50px;
 		}
