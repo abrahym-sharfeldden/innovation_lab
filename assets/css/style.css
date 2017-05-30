@@ -8,92 +8,95 @@ html,html body{
 		margin: 0;
 		padding: 0;
 	}
-	
+@font-face {
+	font-family: 'Proxima Nova';
+	src: url("../fonts/Nova/Mark_Simonson_Proxima_Nova_Alt_Regular_Italic.otf") format("opentype");
+}	
 	/*header*/
 	/* Header Styling */
-	.main_h {
-		position: fixed;
-		max-height: 300px;
-		z-index: 1;
-		width: 100%;
-		padding-top: 6px;
-		padding-bottom: 6px;
-		font-weight: 600;
-		background-color: white;
-		top: 0px;
+		.main_h {
+			position: fixed;
+			max-height: 300px;
+			z-index: 1;
+			width: 100%;
+			padding-top: 6px;
+			padding-bottom: 6px;
+			font-weight: 600;
+			background-color: white;
+			top: 0px;
+			
+		}
+
+		#mySidenav{
+			display: none;
+		}
+		.open-nav {
+			max-height: 400px !important;
+		}
+		.open-nav .mobile-toggle {
+			transform: rotate(-90deg);
+			-webkit-transform: rotate(-90deg);
+		}
+
+		.logo {
+			background: url('../images/innovation.jpg') no-repeat center center;
+			background-size: cover;
+			float: left;
+			display: block;
+			margin-top: 0;
+			padding: 5px;
+			width: 220px;
+			height: 40px;
+		}
+		nav {
+	  		float: right;
+	  		width: 60%;
+		}
+		nav ul {
+			list-style: none;
+			overflow: hidden;
+			text-align: left;
+		}
+		nav ul li {
+			display: inline-block;
+			padding:10px;
+			/*margin-left: 35px;*/
+			line-height: 2;
+			padding-left: 2%;
+		}
+		nav ul a {
+			color: black;
+			text-transform: uppercase;
+			font-size: 16px;
+		}
+
+		.mobile-toggle {
+			display: none;
+			cursor: pointer;
+			font-size: 20px;
+			position: absolute;
+			right: 22px;
+			top: 0;
+			width: 30px;
+		}
 		
-	}
+		.mobile-toggle:hover{
+			background-color: gray;
+		}
+		
 
-	#mySidenav{
-		display: none;
-	}
-	.open-nav {
-		max-height: 400px !important;
-	}
-	.open-nav .mobile-toggle {
-		transform: rotate(-90deg);
-		-webkit-transform: rotate(-90deg);
-	}
-
-	.logo {
-		background: url('../images/innovation.jpg') no-repeat center center;
-		background-size: cover;
-		float: left;
-		display: block;
-		margin-top: 0;
-		padding: 5px;
-		width: 220px;
-		height: 40px;
-	}
-	nav {
-  		float: right;
-  		width: 60%;
-	}
-	nav ul {
-		list-style: none;
-		overflow: hidden;
-		text-align: left;
-	}
-	nav ul li {
-		display: inline-block;
-		padding:10px;
-		/*margin-left: 35px;*/
-		line-height: 2;
-		padding-left: 2%;
-	}
-	nav ul a {
-		color: black;
-		text-transform: uppercase;
-		font-size: 16px;
-	}
-
-	.mobile-toggle {
-		display: none;
-		cursor: pointer;
-		font-size: 20px;
-		position: absolute;
-		right: 22px;
-		top: 0;
-		width: 30px;
-	}
-	
-	.mobile-toggle:hover{
-		background-color: gray;
-	}
-	
-
-	.row {
-		width: 100%;
-		/*max-width: 940px;*/
-		margin:0 auto;
-		position: relative;
-		padding:0 2%;
-	}
-	#tall{
-		height: 2000px;
-		background-color: lavenderblush;
-	}
-/* End of Header styling */
+		.row {
+			width: 100%;
+			/*max-width: 940px;*/
+			margin:0 auto;
+			position: relative;
+			padding:0 2%;
+		}
+		#tall{
+			height: 2000px;
+			background-color: lavenderblush;
+		}
+	/* End of Header styling */
 /* Container Styling*/
 	.container{margin-top: 70px;}
 	.content-container{width:100%;min-height:400px; background:linear-gradient(#FFF,#DDD);}
@@ -398,157 +401,47 @@ html,html body{
 		font-size: 20px;
 	}
 	
+	
 	footer{
-		padding-top: 16px;
+		font-family:'Proxima Nova';
+		border-top:lightgrey 1px solid;
+		line-height:1.618;
+		padding: 20px 0;
 		width: 100%;
-		height: 90px;
-		position: flex;
 		bottom: 0;
-		background-color: #0551a7;
-		text-align: center;
+		background-color: white;
+		font-size: 12px;
+		/*text-align: center;*/
 	}
+
 	.left-footer{
 		display: inline-block;
 		border-right: 2px solid #efefef;
-		width: 40%;
-		color: #efefef;
+		width: 49%;
+		line-height:3;
+		color: black;
+	}
+	.left-container{
+		width:40%;
 	}
 	.right-footer{
 		display: inline-block;
-		width: 40%;
+		width: 49%;
+		line-height:2;
 		float: right;
-		color: #efefef;
-	}
+		color: black;
+	}	
+	footer > div.right-footer > span.left{float:left;font-weight:bolder;font-size:18px;}
+	p{font-style:italic;width:75%;}
+	.icons{text-align:center;margin-top:20px;}
+
+
+	
 	footer *{
 		margin: 0 auto;
 	}
 	
-	/*@media screen and (max-width: 600px){
-		.row-item{
-			display: block;
-			width:300px;
-		}
-		.row-contanier{
-			display: block;
-		}
-		.logo{
-			width: 230px;
-			float: left;
-		}
-		.mobile-toggle{
-			    cursor: pointer;
-				position:inline-block;
-				display: block;
-				top: 0;
-				right: 0;
-				background: #34495E url(images/nav.svg) no-repeat center center;
-				height: 50px;
-				width: 50px;
-		}
-		.row-bar{
-			background-color: grey;
-		}
-		#video{
-			width: 100%;
-		}
-		.row{
-			width:100%;
-			min-width: 0px;
-			padding: 0;
-		}
-		.main_h{
-			width:100%;
-			min-width: 0px;
-			max-height: none;
-			position: relative;
-			padding: 0;
-		}
-		nav{
-			display: none;
-		}
-		
-		nav ul li{
-			display: block;
-			padding: 0;
-			float: none;
-			text-align: center;
-			font-size: 32px;
-		}
-		nav ul li:hover{
-			background-color: grey;
-			padding: 0; 
-		}
-		
-		nav,ul,li{
-			width: 100%;
-		}
-		.image-container{
-			min-width: 0px;
-			
-		}
-		.text-contanier p{
-			font-size: 16px;
-		}
-		.intro-contanier{
-			min-width: 0px;
-			height: auto;
-			margin: 0;
-			padding-right: 0;
-			padding-left: 0;
-		}
-		.row-item{
-			margin: 0 auto;
-		}
-		.contanier-two{
-			min-width: 0;
-			height: auto;
-		}
-		.row-cal{
-			display: block;
-			height: auto;
-		}
-		.text-contanier{
-			margin: 0;
-			width:100%;
-		}
-		.partners a{
-			display: block;
-			margin: 20px 0;
-		}
-		.contanier-icons, .contanier-events{
-			width:100%;
-			display: block;
-			float: none;
-			border: none;
-			position: relative;
-			height: auto;
-			padding: 0;
-		}
-		.contanier-events{
-			padding: 40px 0px; 
-		}
-		.grey-box{
-			float: none;
-		}
-		.partners{
-			min-width: 0px;
-		}
-		.partners h1{
-			font-size: 16px;
-		}
-		.right-footer{
-			height: auto;
-		}
-		.left-footer{
-			height: auto;
-		}
-		footer{
-			min-width: 0px;
-			height: auto;
-			display: flex;
-		}
-		
-	}*/
+
 	@media screen and (max-width: 600px){
 		.row-item{
 			display: block;
