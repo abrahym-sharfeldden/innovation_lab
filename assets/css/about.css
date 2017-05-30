@@ -19,16 +19,21 @@
 		
 	}
 	.intro-container2 h1{
+		font-size: 30px;
 		padding-bottom: 16px;
 	}
 	.intro-container2 h1,.intro-container2 p{
 		
-		font-size: 18px;
+		
 		font-weight: normal;
 		width: 80%;
 		margin: 0 auto;
 		padding-bottom: 40px;
 	}
+	.intro-container2 p{
+		font-size: 18px;
+	}
+	
 	.id-container2{
 		width: 100%;
 		height: auto;
@@ -73,3 +78,26 @@
 		text-align: center;
 		margin: 0 auto;
 	}
+	
+	
+	@media screen and (max-width: 600px){
+		.leaders-container2,.leader-image-container,.text-leader-container2{
+			display: block;
+		}
+		.leader-image-container{
+			padding: 20px 0 0 0;
+			width: 100%;
+		}
+		.leader-image-container img{
+			display: block;
+			margin: auto;
+		}
+		.text-leader-container2 h4{
+			padding-bottom: 20px;
+		}
+		
+	}
+	
+	
+	
+	
