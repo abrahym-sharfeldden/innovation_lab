@@ -24,12 +24,17 @@ html,html body{
 			font-weight: 600;
 			background-color: white;
 			top: 0px;
+			border-bottom: lightgray 2px solid;
 			
 		}
 
 		#mySidenav{
 			display: none;
 		}
+		.fa-circle{
+			opacity: .6;
+		}
+
 		.open-nav {
 			max-height: 400px !important;
 		}
@@ -496,7 +501,7 @@ html,html body{
 			padding: 0;
 			float: none;
 			text-align: center;
-			font-size: 32px;
+			font-size: 20px;
 		}
 		nav ul li:hover{
 			background-color: grey;

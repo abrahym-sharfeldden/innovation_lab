@@ -14,6 +14,7 @@ body{
 		font-weight: 600;
 		background-color: white;
 		top: 0px;
+		border-bottom: lightgray 2px solid;
 	}
 
 	#mySidenav{
@@ -78,7 +79,9 @@ body{
 		position: relative;
 		padding:0 2%;
 	}
-
+	.fa-circle{
+			opacity: .6;
+		}
 
 .hero{
 	height: calc(100vh - 125px);
@@ -337,8 +340,12 @@ footer{
 			padding: 0;
 			float: none;
 			text-align: center;
-			font-size: 32px;
+			font-size: 20px;
 		}
+		nav ul a{
+			text-decoration: none;
+		}
+
 		nav ul li:hover{
 			background-color: grey;
 			padding: 0; 

@@ -1,14 +1,17 @@
-function openNav() {
+/*function openNav() {
     document.getElementById("mySidenav").style.width = "50%";
     
 }
 
 function closeNav() {
     document.getElementById("mySidenav").style.width = "0%";
-}
+}*/
 
 
 $(document).ready(function(){
+  $('.mobile-toggle').click(function(){
+    $('nav').toggle();
+  });
   // Add smooth scrolling to all links
   $("a").on('click', function(event) {
 

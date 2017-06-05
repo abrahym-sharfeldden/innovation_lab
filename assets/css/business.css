@@ -17,6 +17,7 @@ body{
 		font-weight: 600;
 		background-color: white;
 		top: 0px;
+		border-bottom: lightgray 2px solid;
 	}
 
 	#mySidenav{
@@ -57,6 +58,10 @@ body{
 		color: black;
 		text-transform: uppercase;
 		font-size: 16px;
+	}
+
+	.fa-circle{
+		opacity: .6;
 	}
 
 	.mobile-toggle {
@@ -279,7 +284,7 @@ h1{
 	animation: 3.5s ease-out 0s 1 slide;
   background: yellow;
   width: 2px;
-  height: 500px;
+  height: 250px;
 }
 /*******END ADULTS*******/
 footer{
@@ -480,7 +485,7 @@ footer{
 	    height: 0px;
 	  }
 	  100% {
-	    height: 520px;
+	    height: 250px;
 	  }
 	}
 
@@ -488,7 +493,7 @@ footer{
 		margin-left: 50px;
 	}
 	.drop2{
-		height: 520px;
+		height: 250px;
 		animation: 3s ease-out 0s 1 slide;
 	}
 	#program-name{
@@ -496,8 +501,8 @@ footer{
 		margin: 20px 0 70px 0;
 	}
 	#container{
-		margin-bottom: 100px;
-		min-height: 550px;
+		    margin-bottom: 0px;
+    		min-height: 350px;
 	}
 	#calender p{
 		width: 100%;
