@@ -23,7 +23,22 @@
 							<ul>
 								<a href="index.html"><li>Home</li></a>
 								<a href="about.html"><li>About</li></a>
-								<a href="#"><li>Programs</li></a>
+								<li onclick="open_nav()" >PROGRAMS 
+								<div class="drop_down_nav" >
+									<ul >
+										<a href="adults.html"><li>ADULTS</li></a>
+										<a href="youth.html"><li>YOUTH</li></a>
+										<a href="immigrant.html"><li>IMMIGRANT</li></a>
+										<a href="business.html"><li>BUSINESS</li></a>
+									</ul>
+								</div>
+								<ul class="mobile-drop-down-nav">
+										<a href="adults.html"><li>ADULTS</li></a>
+										<a href="youth.html"><li>YOUTH</li></a>
+										<a href="immigrant.html"><li>IMMIGRANT</li></a>
+										<a href="business.html"><li>BUSINESS</li></a>
+									</ul>
+								</li>
 								<a href="contact.html"><li>Contact</li></a>
 							</ul>
 						</nav>
@@ -83,6 +98,13 @@
 			</div>
 		</div> 
 	 </footer>
-
+ <script type="text/javascript">
+	function open_nav(){
+				if(window.matchMedia( "(max-width: 600px)" ).matches)
+					$('.mobile-drop-down-nav').toggle();
+				else
+					$('.drop_down_nav').toggle();
+			}
+	</script>	
 	</body>
 	</html>

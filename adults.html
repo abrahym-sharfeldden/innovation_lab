@@ -4,7 +4,8 @@
 	<meta name="viewport" content="width=device-width initial-scale=1">
 	<title>Innovation Lab</title>
 	<link rel="stylesheet" type="text/css" href="assets/css/adults.css">
-	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,500,600,700,800,900" rel="stylesheet">
 	<link rel='stylesheet prefetch' href='https://netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.css'>
 	<link rel="shortcut icon" type="image/x-icon" href="assets/images/icon.jpg"/>
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
@@ -13,14 +14,31 @@
 <header class="main_h">
 					<div class="row">
 					<div class="row-bar">
-					<div class="mobile-toggle" ></div>
+					<div class="mobile-toggle"></div>
 						<a href="index.html" class="logo"></a>
+
+						
 					</div>
 						<nav>
 							<ul>
 								<a href="index.html"><li>Home</li></a>
 								<a href="about.html"><li>About</li></a>
-								<a href="#"><li>Programs</li></a>
+								<li onclick="open_nav()" >PROGRAMS 
+								<div class="drop_down_nav" >
+									<ul >
+										<a href="adults.html"><li>ADULTS</li></a>
+										<a href="youth.html"><li>YOUTH</li></a>
+										<a href="immigrant.html"><li>IMMIGRANT</li></a>
+										<a href="business.html"><li>BUSINESS</li></a>
+									</ul>
+								</div>
+								<ul class="mobile-drop-down-nav">
+										<a href="adults.html"><li>ADULTS</li></a>
+										<a href="youth.html"><li>YOUTH</li></a>
+										<a href="immigrant.html"><li>IMMIGRANT</li></a>
+										<a href="business.html"><li>BUSINESS</li></a>
+									</ul>
+								</li>
 								<a href="contact.html"><li>Contact</li></a>
 							</ul>
 						</nav>
@@ -125,6 +143,14 @@
 			</div>
 		</div> 
 	 </footer>
+	  <script type="text/javascript">
+	function open_nav(){
+				if(window.matchMedia( "(max-width: 600px)" ).matches)
+					$('.mobile-drop-down-nav').toggle();
+				else
+					$('.drop_down_nav').toggle();
+			}
+	</script>	
 <script src="assets/js/jsc.js"></script>
 </body>
 </html>
