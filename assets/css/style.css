@@ -426,7 +426,7 @@ html,html body{
 	}
 	.text-contanier{
 		font-weight: 600; 
-		font-size: 20px;
+		font-size: 16px;
 	}
 	
 	
@@ -460,7 +460,7 @@ html,html body{
 		color: black;
 	}	
 	footer > div.right-footer > span.left{float:left;font-weight:bolder;}
-	p{font-style:italic;width:90%;}
+	p{font-style:italic;width:95%;}
 	.icons{text-align:center;margin-top:20px;}
 
 
