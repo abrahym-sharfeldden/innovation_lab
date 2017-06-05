@@ -106,7 +106,7 @@ html,html body{
 		}
 		
 		.mobile-toggle:hover{
-			background-color: gray;
+			background-color: lightgray;
 		}
 		
 
@@ -493,9 +493,11 @@ html,html body{
 				height: 50px;
 				width: 50px;
 		}
-		
+		.linea{
+			border-top:1px gray solid; 
+		}
 		.row-bar{
-			background-color: grey;
+			background-color: lightgrey;
 		}
 		#video{
 			width: 100%;
@@ -515,16 +517,21 @@ html,html body{
 		nav{
 			display: none;
 		}
-		
+		.mobile-drop-down-nav a li{
+			text-align: left;
+			position: relative;
+			left: 10%;
+		}
 		nav ul li{
 			display: block;
 			padding: 0;
 			float: none;
-			text-align: center;
+			text-align: left;
 			font-size: 20px;
+			padding-left: 20px;
 		}
 		nav ul li:hover{
-			background-color: grey;
+			background-color: lightgrey;
 			padding: 0; 
 		}
 		

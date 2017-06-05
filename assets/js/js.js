@@ -44,10 +44,19 @@ var height = $(".hero").outerHeight(); //gets height
 var total = topofDiv + height;
 $(window).scroll(function(){
     if($(window).scrollTop() > (total) - 300){
-      $('#one').delay(0).show(0);
-      $('#two').delay(1000).show(0);
-      $('#three').delay(2000).show(0);
-      $("#line").addClass("drop2");
+      if(($('#three').length) != 0 )
+      {
+        $('#one').delay(0).show(0);
+        $('#two').delay(1000).show(0);
+        $('#three').delay(2000).show(0);
+        $("#line").addClass("drop2");
+      }
+      else
+      {
+        $('#one').delay(0).show(0);
+        $('#two').delay(2000).show(0);
+        $("#line").addClass("drop2");
+      }
     }
 });
 });
