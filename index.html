@@ -1,45 +1,79 @@
-<html>
-	<head>
-		<meta name="viewport" content="width=device-width">
-		<link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,500,600,700,800,900" rel="stylesheet"> 
-		<title>Innovation Lab</title>
-		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-		<script src="assets/js/script.js"></script>
-	</head>
+<!DOCTYPE html>
+	<html>
+		<head>
+			<meta name="viewport" content="width=device-width initial-scale=1">
+			<link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,500,600,700,800,900" rel="stylesheet">
+			<link rel="shortcut icon" type="image/x-icon" href="assets/images/icon.jpg"/>
+			<title>Innovation Lab</title>
+			<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+			<script src="assets/js/script.js"></script>
+			<link rel='stylesheet prefetch' href='https://netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.css'>
+		</head>
 
 	<body>
-				<header class="main_h">
+		<header class="main_h">
 					<div class="row">
-						<a class="logo" href="#"></a>
+					<div class="row-bar">
+					<div class="mobile-toggle"></div>
+						<a href="index.html" class="logo"></a>
 
-						<div class="mobile-toggle">
-							<span></span>
-							<span></span>
-							<span></span>
-						</div>
-
+						
+					</div>
 						<nav>
 							<ul>
-								<li>Home</li>
-								<li>Programs</li>
-								<li>Contact</li>
+								<a href="index.html"><li>Home</li></a>
+								<a href="about.html"><li>About</li></a>
+								<a href="blog.html"><li>Blog</li></a>
+								<li onclick="open_nav()" >PROGRAMS <i class="fa fa-caret-down" aria-hidden="true"></i>
+								<div class="drop_down_nav" >
+									<ul >
+										<a href="adults.html"><li>ADULTS</li></a>
+										<a href="youth.html"><li>YOUTH</li></a>
+										<a href="immigrant.html"><li>IMMIGRANT</li></a>
+										<a href="business.html"><li>BUSINESS</li></a>
+									</ul>
+								</div>
+								<ul class="mobile-drop-down-nav">
+										<a href="adults.html"><li class="linea">ADULTS</li></a>
+										<a href="youth.html"><li class="linea">YOUTH</li></a>
+										<a href="immigrant.html"><li class="linea">IMMIGRANT</li></a>
+										<a href="business.html"><li class="linea" style="border-bottom: 1px gray solid;">BUSINESS</li></a>
+									</ul>
+								</li>
+								<a href="contact.html"><li>Contact</li></a>
 							</ul>
 						</nav>
 					</div>
 				</header>
-		<div class="image-container">
-			<div class="arrow-container"><a href="#intro">&#709;</a></div>
+		
+		<div id="mySidenav" class="sidenav">
+		  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		  <a href="index.html">Home</a>
+		  <a href="about.html">About</a>
+		  <a href="blog.html">Blog</a>
+		  <a href="#">Programs</a>
+		  <a href="contact.html">Contact</a>
 		</div>
-		<div class="intro-contanier" id="intro">
+		<div class="image-container">
+			<div class="arrow-container">
+				<a href="#intro" id="intro" class="hide-on-palm arrow-down">
+					<span class="fa-stack fa-3x">
+						<i class="fa fa-circle fa-stack-2x"></i>
+						<i class="fa fa-chevron-down fa-stack-1x"></i>
+					</span>
+				</a>
+			</div>
+		</div>
+		<div class="intro-contanier">
 			<h1 class ="intro-text">INNOVATION LAB @ INDUSTRY CITY</h1>
 			<div class="text-contanier">
-				<p style=" font-weight: 600; font-size: 26px;">A match made in Sunset Park. Our Innovation Lab trains a quailty workforce of local community residents, and integrates them into surrounding businesses.</p><br> <p style="font-size: 26px;"><a href="#">Learn More</a></p>
+				<p>A match made in Sunset Park. Our Innovation Lab trains a quailty workforce of local community residents, and integrates them into surrounding businesses.</p><br> <p style="font-size: 26px;"><a href="about.html">Learn More</a></p>
 			</div>
 		</div>
 		<div class="row-contanier" id="next">
 				<div class="row-item">
-					<img src="assets/images/adult.png" alt="" width="100%" height="100%" class="alignnone size-medium wp-image-176" />
+					<a href="adults.html"><img src="assets/images/adult.png" alt="" width="100%" height="100%" class="alignnone size-medium wp-image-176" /></a>
 					
 					<div class="word1">Adult <br>Programs</div>
 					<!--<div class="overlay">
@@ -47,7 +81,7 @@
 					</div>-->
 			</div>
 				<div class="row-item">
-					<img src="assets/images/code.png" alt="" width="100%" height="100%" class="alignnone size-medium wp-image-191" />
+					<a href="youth.html"><img src="assets/images/code.png" alt="" width="100%" height="100%" class="alignnone size-medium wp-image-191" /></a>
 					
 					<div class="word2">Youth <br>Programs</div>
 					<!--<div class="overlay">
@@ -55,14 +89,14 @@
 					</div>-->
 				</div>
 				<div class="row-item">
-					<img class="alignnone size-medium wp-image-179" src="assets/images/flag.png" alt="" width="100%" height="100%" />
+					<a href="immigrant.html"><img class="alignnone size-medium wp-image-179" src="assets/images/flag.png" alt="" width="100%" height="100%" /></a>
 					<div class="word3">Immigration <br>Classes</div>
 					<!--<div class="overlay">
 						<div class="text">Immigration Services</div>
 					</div>-->
 				</div>
 				<div class="row-item">
-					<img src="assets/images/simplebrief.png" alt="" width="100%" height="100%" class="alignnone size-medium wp-image-178" />
+					<a href="business.html"><img src="assets/images/simplebrief.png" alt="" width="100%" height="100%" class="alignnone size-medium wp-image-178" /></a>
 					<div class="word4" style=" padding: 26px 0;">Workshops</div>
 					<!--<div class="overlay">
 						<div class="text">Workshops</div>
@@ -73,7 +107,7 @@
 		<div class="contanier-two">
 			<div class="contanier-icons">
 				
-				<iframe id="video" src="https://player.vimeo.com/video/216242569" width="90%" height="450" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+				<iframe id="video" src="https://player.vimeo.com/video/216242569" width="90%" height="450" frameborder="0" align="middle" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 			</div>
 			<div class="contanier-events">
 					
@@ -91,25 +125,46 @@
 
 		<div class="partners">
 				<h1>Innovation lab is a partner of the following organizations</h1>
-			  <div class="images-contanter">
-				<a href="http://sco.org/programs/center-for-family-life/"><img src="assets/images/sunset.png" alt="" class="alignnone size-full wp-image-135" /></a>
-				<a href="http://www.citytech.cuny.edu/" ><img src="assets/images/citytech.png" alt="" class="alignnone size-full wp-image-130" /></a>
+			  <div class="assets/images-contanter">
 				<a href="https://industrycity.com/"><img src="assets/images/ic.png" alt="" class="alignnone size-full wp-image-131" /></a>
-				<a href="http://www.sbidc.org/"><img src="assets/images/sbid.png" alt="" class="alignnone size-full wp-image-134" /></a>
 				<a href="http://obtjobs.org/home/"><img src="assets/images/obt.png" alt="" class="alignnone size-full wp-image-194" /></a>
+				<a href="http://www.citytech.cuny.edu/" ><img src="assets/images/citytech.png" alt="" class="alignnone size-full wp-image-130" /></a>
+				<a href="http://sco.org/programs/center-for-family-life/"><img src="assets/images/sunset.png" alt="" class="alignnone size-full wp-image-135" /></a>
+				<a href="http://www.sbidc.org/"><img src="assets/images/sbid.png" alt="" class="alignnone size-full wp-image-134" /></a>
+				
 			  </div>
 		</div>
+	
+	
 
-
-		 <footer>
-		 	 <div class="left-footer">
-				location:<br>
-				Innovation Lab <br> 87 35th 2nd floor <br>Brooklyn,NY 11232	
+	 <footer>
+	 	 <div class="left-footer">
+			<div class="left-container">
+				<i class="fa fa-map-marker" aria-hidden="true"></i> 87 35th 2nd floor <br>Brooklyn,NY 11232	<br>
+				<i class="fa fa-mobile" aria-hidden="true"></i> (718) 801-8970<br>
+				<i class="fa fa-envelope" aria-hidden="true" style="color: black;"></i> <span class="in-email">innovationlab@industrycity.com</span>
 			</div>
-			<div class="right-footer">
-			 Designed by Veronica C. <br><br> Developed by Internship Team 6A
+		</div>
+		<div class="right-footer">
+			<span class="left">ABOUT:</span>
+			<br><div style="clear:both;"></div>
+			<p>"Industry City is an innovation ecosystem that serves to benefit its tentants and the wider community. Its 35 acres is located on the waterfront in Sunset Park, Brooklyn."
+			<br>
+			
+			<div class="icons">
+				<i class="fa fa-2x fa-facebook-square" aria-hidden="true"></i> 
+				<i class="fa fa-2x fa-twitter-square" aria-hidden="true"></i>  
+				<i class="fa fa-2x fa-instagram" aria-hidden="true"></i>
 			</div>
-		 </footer>
-
-		</body>
+		</div> 
+	 </footer>
+	 <script type="text/javascript">
+	function open_nav(){
+				if(window.matchMedia( "(max-width: 600px)" ).matches)
+					$('.mobile-drop-down-nav').toggle();
+				else
+					$('.drop_down_nav').toggle();
+			}
+	</script>		
+	</body>
 	</html>

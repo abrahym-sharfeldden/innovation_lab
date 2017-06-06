@@ -1,0 +1,509 @@
+body{
+	margin: 0;
+	font-family: 'Raleway', sans-serif;
+}
+
+
+.main_h {
+		position: fixed;
+		max-height: 300px;
+		z-index: 1;
+		width: 100%;
+		padding-top: 6px;
+		padding-bottom: 6px;
+		font-weight: 600;
+		background-color: white;
+		top: 0px;
+	}
+
+	#mySidenav{
+		display: none;
+	}
+	
+
+	.logo {
+		background: url('assets/images/innovation.jpg') no-repeat center center;
+		background-size: cover;
+		float: left;
+		display: block;
+		margin-top: 0;
+		padding: 5px;
+		width: 220px;
+		height: 40px;
+		position: relative;
+	}
+	nav {
+  		float: right;
+  		width: 60%;
+	}
+	nav ul {
+		list-style: none;
+		overflow: hidden;
+		text-align: left;
+		margin: 0;
+		padding: 0;
+	}
+	nav ul li {
+		display: inline-block;
+		padding:10px;
+		/*margin-left: 35px;*/
+		line-height: 2;
+		padding-left: 2%;
+	}
+	nav ul a {
+		color: black;
+		text-transform: uppercase;
+		font-size: 16px;
+	}
+
+	.mobile-toggle {
+		display: none;
+		cursor: pointer;
+		font-size: 20px;
+		position: absolute;
+		right: 22px;
+		top: 0;
+		width: 30px;
+	}
+	
+	.mobile-toggle:hover{
+		background-color: gray;
+	}
+	
+
+	.row {
+		width: 100%;
+		/*max-width: 940px;*/
+		margin:0 auto;
+		position: relative;
+		padding:0 2%;
+	}
+
+
+.hero{
+	height: calc(100vh - 125px);
+	background: url(assets/images/blog.jpg);
+  	background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom: solid 4px blue;
+    margin-top: 64px;
+}
+.arrow-container{
+	position: absolute;
+	bottom: 60px;
+	width: 100%;
+	text-align: center;
+}
+
+@-webkit-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
+  }
+  60% {
+    -webkit-transform: translateY(-15px);
+            transform: translateY(-15px);
+  }
+}
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
+  }
+  60% {
+    -webkit-transform: translateY(-15px);
+            transform: translateY(-15px);
+  }
+}
+
+.middle, .go-here {
+  position: relative;
+  height: 30em;
+}
+
+.fa-circle {
+  color: black;
+}
+
+.arrow-down {
+  color: white;
+}
+.arrow-down .fa-stack {
+  -webkit-animation: bounce 2s 3;
+          animation: bounce 2s 3;
+}
+.arrow-down .fa-stack:hover {
+  -webkit-animation: none;
+          animation: none;
+}
+/***************BAR THING********************/
+#bar{
+	height: 100px;
+	background-color: rgba(5,81,167,0.9);
+	margin-top: -100px;
+}
+#bar h1{
+	line-height: 100px;
+	margin: 0 0 0 30px;
+	font-size: 60px;
+	letter-spacing: 10px;
+}
+/***************START MAIN*******************/
+#main{
+	padding-top: 50px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	margin-bottom: 100px;
+	}
+
+	#content{
+	width: 680px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	}
+		.meh{
+		width: 300px;
+		margin-bottom: 40px;
+		}
+		#content img{
+		width: 100%;
+		}
+		h2{
+		padding-left: 5px;
+		}
+		#content p{
+		width: 100%;
+		padding-left: 10px; 
+		}
+#calender{
+	margin-right: 5%;
+	border-left: solid 2px;
+	padding-left: 30px;
+}
+
+.info{
+	display: flex;
+	margin-bottom: 30px;
+}
+
+.date{
+	height: 100px;
+	background-color: lightgray;
+	text-align: center;
+	padding: 10px;
+	border-radius: 8px;
+}
+.date p{
+	margin: 0;	
+	font-size: 25px;
+	width: 100%;
+}
+.num{
+	font-weight: bold;
+	font-size: 30px;
+}
+
+.title{
+	margin: 0 0 0 30px;
+	line-height: 100px;
+}	
+		@media screen and (max-width: 1093px){
+			#main{
+				justify-content: initial;
+			}
+			#content{
+				margin: auto;
+			}
+			#calender{
+				border-left: none;
+				border-top: solid 2px;
+				margin: auto;
+			}
+			#calender-container{
+				display: flex;
+				flex-wrap: wrap;
+			}
+			.info{
+				margin-right: 30px;
+			}
+		}
+		@media screen and (max-width: 720px){
+			#content{
+				width: 100%;
+			}
+			.meh{
+				width: 90%;
+				margin: 0 auto 40px;
+			}
+		}
+		@media screen and (max-width: 500px){
+			.title{
+				font-size: 25px;
+				margin-left: 20px;
+				line-height: 50px;
+			}
+		}
+
+/*******END MAIN******/
+footer{
+		font-family:'Proxima Nova';
+		border-top:lightgrey 1px solid;
+		line-height:1.618;
+		padding: 20px 0;
+		width: 100%;
+		bottom: 0;
+		background-color: white;
+		font-size: 12px;
+		/*text-align: center;*/
+	}
+
+	.left-footer{
+		display: inline-block;
+		border-right: 2px solid #efefef;
+		width: 49%;
+		line-height:3;
+		color: black;
+	}
+	.left-container{
+		width:40%;
+	}
+	.right-footer{
+		display: inline-block;
+		width: 49%;
+		line-height:2;
+		float: right;
+		color: black;
+	}	
+	footer > div.right-footer > span.left{float:left;font-weight:bolder;}
+	p{font-style:italic;width:75%;}
+	.icons{text-align:center;margin-top:20px;}
+
+
+	
+	footer *{
+		margin: 0 auto;
+	}
+	
+
+	@media screen and (max-width: 600px){
+		.row-item{
+			display: block;
+			width:200px;
+		}
+		.row-contanier{
+			display: block;
+			margin-top: 30px;
+			padding: 0px;
+		}
+		.logo{
+			width: 210px;
+			float: left;
+		}
+		.mobile-toggle{
+			    cursor: pointer;
+				display: block;
+				top: 0px;
+				right: 0px;
+				background: #34495E url(assets/images/nav.svg) no-repeat center center;
+				height: 50px;
+				width: 50px;
+		}
+		
+		.row-bar{
+			background-color: grey;
+		}
+		#video{
+			width: 100%;
+		}
+		.row{
+			width:100%;
+			min-width: 0px;
+			padding: 0;
+		}
+		.main_h{
+			width:100%;
+			min-width: 0px;
+			max-height: none;
+			position: fixed;
+			padding: 6px 0;
+		}
+		nav{
+			display: none;
+		}
+		
+		nav ul li{
+			display: block;
+			padding: 0;
+			float: none;
+			text-align: center;
+			font-size: 32px;
+		}
+		nav ul li:hover{
+			background-color: grey;
+			padding: 0; 
+		}
+		
+		nav,ul,li{
+			width: 100%;
+		}
+			.sidenav {
+		height: 100%;
+		width: 0;
+		position: fixed;
+		z-index: 2;
+		top: 0;
+		right: 0;
+		background-color: #111;
+		overflow-x: hidden;
+		transition: 0.5s;
+		padding-top: 60px;
+	}
+
+	.sidenav a {
+		padding: 8px 8px 8px 32px;
+		text-decoration: none;
+		font-size: 25px;
+		color: #818181;
+		display: block;
+		transition: 0.3s;
+	}
+
+	.sidenav a:hover, .offcanvas a:focus{
+		color: #f1f1f1;
+	}
+
+	.sidenav{
+		float: right;
+		font-size: 36px;
+		/*margin-left: 50px;*/
+	}
+	
+	.closebtn {
+		position: absolute;
+		top: 0;
+		right: 25px;
+		font-size: 36px;
+		margin-left: 50px;
+	}
+		
+		.image-container{
+			min-width: 0px;
+    		background-size: cover;
+    		position: relative;
+		}
+		.text-contanier p{
+			font-size: 16px;
+		}
+		.intro-contanier{
+			min-width: 0px;
+			height: auto;
+			margin: 0;
+			padding:30px 0;
+		}
+		.row-item{
+			margin: 0 auto;
+		}
+		.contanier-two{
+			min-width: 0px;
+    		height: auto;
+		}
+		.row-cal{
+			display: block;
+			height: auto;
+		}
+		#lm{
+			font-size: 20px;
+		}
+		.text-contanier{
+			margin: 0;
+			width:100%;
+		}
+		.partners a{
+			display: inline-block;
+    		margin: 20px 0px;
+    		position: relative;
+    		min-width: 0;
+    		max-width: 100%;
+		}
+		.partners a img{
+			width: 150px;
+			height: 75px;
+		}
+		
+		.images-contanter {
+			display: inline-block;
+		}
+		#img1 {
+			float: left;
+			width: 30%;
+		}
+		#img2 {
+			float: right;
+			width: 56%;
+    		padding-left: 10px;
+		}
+		#img3 {
+			float: left;
+			width: 30%;
+		}
+		#img4 {
+			float: right;
+			width: 56%;
+    		padding-left: 10px;
+		}
+		.contanier-icons, .contanier-events{
+			width:100%;
+			display: block;
+			float: none;
+			border: none;
+			position: relative;
+			height: auto;
+			padding: 0;
+		}
+		.contanier-events{
+			padding: 40px 0px; 
+		}
+		.grey-box{
+			float: none;
+		}
+		.partners{
+			min-width: 0px;
+		}
+		.partners h1{
+			font-size: 10px;
+			letter-spacing: 5px;
+		}
+		.right-footer{
+			height: auto;
+		}
+		.left-container{
+			width: 100%;
+			font-size: 10px;
+			height: 100%;
+			text-align: center;
+			padding-top: 40px;
+		}
+		.left-footer{
+			height: auto;
+		}
+		footer{
+			min-width: 0px;
+			height: auto;
+			display: flex;
+		}
+		#mySidenav{
+			display: block;
+		}
+		
+	}
