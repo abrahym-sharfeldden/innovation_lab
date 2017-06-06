@@ -31,9 +31,6 @@ html,html body{
 		#mySidenav{
 			display: none;
 		}
-		.fa-circle{
-			opacity: .6;
-		}
 
 		.open-nav {
 			max-height: 400px !important;
@@ -178,7 +175,7 @@ html,html body{
 }
 
 .fa-circle {
-  color: black;
+  color: #0f54a4;
 }
 
 .arrow-down {
