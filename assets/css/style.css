@@ -277,28 +277,28 @@ html,html body{
 	.word1{
 		border-top: 5px solid rgb(255,54,194);
 		padding-top: 16px;
-		font-size: 130%;
+		font-size: 2vw;
 		text-align: center;
 		font-weight: 700;
 	}
 	.word2{
 		border-top: 5px solid rgb(179, 48, 180);
 		padding-top: 16px;
-		font-size: 130%;
+		font-size: 2vw;
 		text-align: center;
 		font-weight: 700;
 	}
 	.word3{
 		border-top: 5px solid rgb(6,236,84);
 		padding-top: 16px;
-		font-size: 130%;
+		font-size: 2vw;
 		text-align: center;
 		font-weight: 700;
 	}
 	.word4{
 		border-top: 5px solid rgb(216,253,0);
 		padding-top: 16px;
-		font-size: 130%;
+		font-size: 2vw;
 		text-align: center;
 		font-weight: 700;
 	}
@@ -500,6 +500,10 @@ html,html body{
 		.row-bar{
 			background-color: lightgrey;
 		}
+		.word1,.word2,.word3,.word4{
+			font-size: 130%;
+		}
+
 		#video{
 			width: 100%;
 		}
@@ -568,7 +572,7 @@ html,html body{
 	.sidenav{
 		float: right;
 		font-size: 36px;
-		/*margin-left: 50px;*/
+		
 	}
 	
 	.closebtn {
