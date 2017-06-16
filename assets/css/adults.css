@@ -2,7 +2,10 @@ body{
 	margin: 0;
 	font-family: 'Raleway', sans-serif;
 }
-
+@font-face {
+	font-family: 'Giants';
+	src: url("../fonts/Fonts/Giant-Background.otf") format("opentype");
+}
 
 .main_h {
 		position: fixed;
@@ -233,8 +236,10 @@ h1{
 
 .words p{
 	font-weight: bold;
-	font-size: 20px;
-	width: 100%;
+    font-size: 1.1em;
+    width: 100%;
+    padding-left: 35px;
+    padding-top: 10px;
 }
 
 .box {

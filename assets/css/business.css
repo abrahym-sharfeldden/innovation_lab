@@ -5,7 +5,7 @@ body{
 
 @font-face {
 	font-family: 'Giants';
-	src: url("Fonts/Fonts/Giant-Background.otf") format("opentype");
+	src: url("../fonts/Fonts/Giant-Background.otf") format("opentype");
 }
 .main_h {
 		position: fixed;
@@ -258,8 +258,10 @@ h1{
 
 .words2 p{
 	font-weight: bold;
-	font-size: 20px;
-	width: 100%;
+    font-size: 1.1em;
+    width: 100%;
+    padding-left: 35px;
+    padding-top: 10px;
 }
 
 .box {
