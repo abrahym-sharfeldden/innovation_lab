@@ -1,4 +1,18 @@
+
+/*function openNav() {
+    document.getElementById("mySidenav").style.width = "50%";
+    
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0%";
+}*/
+
+
 $(document).ready(function(){
+	$('.mobile-toggle').click(function(){
+		$('nav').toggle();
+	});
 	// Select all links with hashes
 $('a[href*="#"]')
   // Remove links that don't actually link to anything
@@ -35,4 +49,9 @@ $('a[href*="#"]')
       }
     }
   });
+  
+  
+  
+  
+  
 });
