@@ -87,6 +87,12 @@ html,html body{
 				}
 				.drop_down_nav ul li{
 					display: block;
+				    border-bottom: lightgray 2px solid;
+				    border-left: lightgray 2px solid;
+				    border-right: lightgray 2px solid;
+				    text-align: -webkit-center;
+				    width: 100px;
+    				padding-left: 13px;
 		}
 		.mobile-drop-down-nav{
 			display:none;
